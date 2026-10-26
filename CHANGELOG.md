@@ -22,6 +22,7 @@ limitations under the License.
 
 **BREAKING CHANGES:**
 - The wheel now requires glibc 2.39 or newer (Ubuntu 24.04+), up from 2.35, because Triton 24.11 and later are built on Ubuntu 24.04.
+- protobuf 6.33.5 or newer is now required. tritonclient 2.72 and later need it but only declare 6.30, so pytriton failed to import with a protobuf `VersionError` in containers that ship an older protobuf, such as NVIDIA PyTorch 25.08.
 
 [//]: <> (put here on external component update with short summary what change or link to changelog)
 
